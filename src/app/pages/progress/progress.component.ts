@@ -5,19 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './progress.component.html',
   styles: []
 })
-//COMPONENTE PADRE
 export class ProgressComponent implements OnInit {
 
-  porcentaje: number = 50;
+  progreso1: number = 20;
+  progreso2: number = 30;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  //Recibo valores del componente hijo
-  actualizar( event : number){
-    this.porcentaje = event;
-  }
+
 
 }
